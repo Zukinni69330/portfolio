@@ -16,4 +16,4 @@ jobs:
           local_path: './*' # => le fichier à modifier.
           remote_path: '/portfolio/' # => le dossier/chemin d'accès.
           sftp_only: true # => sftp obligatoire
-          password: GARCIAort2023 # => mot de passe du server.
+          password: ${{ secrets.Pass }} # => mot de passe du server.
