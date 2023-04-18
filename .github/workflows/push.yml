@@ -11,8 +11,8 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: ${{ secrets.username }} # => username du server.
-          server: access914943276.webspace-data.io 
-          port: 22 # => Port du server.
+          server: ${{ secrets.server }} # =>hote.
+          port: ${{ secrets.port }} # => Port du server.
           local_path: './*' # => le fichier à modifier.
           remote_path: '/portfolio/' # => le dossier/chemin d'accès.
           sftp_only: true # => sftp obligatoire
