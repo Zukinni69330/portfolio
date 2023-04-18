@@ -10,7 +10,7 @@ jobs:
       - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: u34798713 # => mot de passe du server.
+          username: ${{ secrets.username }} # => username du server.
           server: access914943276.webspace-data.io 
           port: 22 # => Port du server.
           local_path: './*' # => le fichier à modifier.
